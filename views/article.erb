@@ -2,18 +2,55 @@
 <html lang='en'>
   <head>
     <title>CREATE DAT ARTICLE BRUV.</title>
-    <link rel="stylesheet" href="home.css" />
+<link href="/views/bootstrap.css" type="text/css" rel="stylesheet">
   </head>
   <body>
   <form action='/articles' method='post'>
-    <label for='title'>New Title:</label>
-    <input type='text' id='title' name='title' />
-    <label for='url_name'>New URL:</label>
-    <input type='text' id='url_name' name='url_name' />
-    <label for='descriptor'>New descriptor:</label>
-    <input type='text' id='descriptor' name='descriptor'/>
-    <label for='wizard_name'>New WIZARD NAME:</label>
-    <input type='text' id='wizard_name' name='wizard_name'/>
-    <input type='submit' />
+<form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Whats your Story?</legend>
+<center>
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="title">Title:</label>
+  <div class="controls">
+    <input id="title" name="title" type="text" placeholder="Whats your title?" class="input-xlarge">
+
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="url_name">URL:</label>
+  <div class="controls">
+    <input id="url_name" name="url_name" type="text" placeholder="Paste URL Here" class="input-large">
+
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="descriptor">Descriptor:</label>
+  <div class="controls">
+    <input id="descriptor" name="descriptor" type="text" placeholder="Whats your description? " class="input-xlarge">
+
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="wizard_name">Wizard Name:</label>
+  <div class="controls">
+    <input id="wizard_name" name="wizard_name" type="text" placeholder="Whats your wizard name? " class="input-xlarge"><br><br>
+    <input type='submit' class="btn btn-primary btn-large"><i class="icon-white icon-arrow-up"></i></a>
+  </div>
+</div>
+</center>
+</fieldset>
+</form>
+
+
   </body>
 </html>

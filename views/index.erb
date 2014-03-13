@@ -11,7 +11,7 @@
 
   </head>
   <body>
-    <h1>DA WIZARD FORUM</h1>
+    <center><h1>DA WIZARD FORUM</h1></center>
 
 
 <table class="table table-striped">
@@ -28,7 +28,7 @@
    <% @articles.each do |article| %>
     <tr>
      <td><%= article[0] %></td>
-     <td><%= article[1] %></td>
+     <td><a href="<%= article[1] %>"><%= article[1] %></a></td>
      <td><%= article[2] %></td>
      <td><%= article[3] %></td>
       </tr>
@@ -36,11 +36,8 @@
 
  </tbody>
 </table>
-
-
-<a href ="/article">SUBMIT HURR</a>
-
-
-
+<center>
+<a href="/article" class="btn btn-primary btn-large"><i class="icon-white icon-star-empty"></i> Submit New Stories Here</a>
+</center>
   </body>
 </html>
