@@ -1,18 +1,46 @@
-<!DOCTYPE  html>
-<html lang='en'>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>WIZARDS IN DA HOUSE</title>
-    <link rel="stylesheet" href="home.css" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DA WIZARD FORUM</title>
+
+    <!-- Bootstrap -->
+<link href="http://stayhungrystayfoolish.io/css/bootstrap.css" rel="stylesheet">
+
   </head>
   <body>
     <h1>DA WIZARD FORUM</h1>
 
 
-<% @articles.each do |article| %>
-<p><%= article[0] %></p>
-<p><%= article[1] %></p>
-<p><%= article[2] %></p>
-<p><%= article[3] %></p>
-<% end %>
-</body>
+<table class="table table-striped">
+        <thead>
+<h1>
+ <th>Title</th>
+ <th>URL</th>
+ <th>Desciption</th>
+ <th>Wizard Name</th>
+</h1>
+</thead>
+ <tbody>
+
+   <% @articles.each do |article| %>
+    <tr>
+     <td><%= article[0] %></td>
+     <td><%= article[1] %></td>
+     <td><%= article[2] %></td>
+     <td><%= article[3] %></td>
+      </tr>
+   <% end %>
+
+ </tbody>
+</table>
+
+
+<a href ="/article">SUBMIT HURR</a>
+
+
+
+  </body>
 </html>

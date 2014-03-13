@@ -14,6 +14,10 @@ get '/index' do
 erb :index
 end
 
+get '/' do
+  redirect '/index'
+end
+
 get '/article' do
 erb :article
 end
