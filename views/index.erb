@@ -7,20 +7,12 @@
   <body>
     <h1>DA WIZARD FORUM</h1>
 
-<form action="/article" method='post'>
-    <label for='title'>New Title:</label>
-    <input type='text' id='title' name='title' />
-    <label for='url_name'>New URL:</label>
-    <input type='text' id='url_name' name='url_name' />
-    <label for='descriptor'>New descriptor:</label>
-    <input type='text' id='descriptor' name='descriptor'/>
-    <label for='wizard_name'>New WIZARD NAME:</label>
-    <input type='text' id='wizard_name' name='wizard_name'/>
-    <input type='submit' />
-    </form>
-    <ul>
+
 <% @articles.each do |article| %>
-<li><%= article %></li>
-<% end %></ul>
+<p><%= article[0] %></p>
+<p><%= article[1] %></p>
+<p><%= article[2] %></p>
+<p><%= article[3] %></p>
+<% end %>
 </body>
 </html>
