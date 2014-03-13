@@ -1,13 +1,11 @@
 <!DOCTYPE  html>
 <html lang='en'>
   <head>
-    <title>WIZARDS IN DA HOUSE</title>
+    <title>CREATE DAT ARTICLE BRUV.</title>
     <link rel="stylesheet" href="home.css" />
   </head>
   <body>
-    <h1>DA WIZARD FORUM</h1>
-
-<form action="/article" method='post'>
+  <form action='../articles' method='post'>
     <label for='title'>New Title:</label>
     <input type='text' id='title' name='title' />
     <label for='url_name'>New URL:</label>
@@ -17,10 +15,5 @@
     <label for='wizard_name'>New WIZARD NAME:</label>
     <input type='text' id='wizard_name' name='wizard_name'/>
     <input type='submit' />
-    </form>
-    <ul>
-<% @articles.each do |article| %>
-<li><%= article %></li>
-<% end %></ul>
-</body>
+  </body>
 </html>
